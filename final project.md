@@ -1,3 +1,14 @@
+---
+title: "index"
+author: "Elamathi Elangovan"
+date: "06/05/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 # Exploring the correlation between parental education level and the education level of their children.
 
 ### Elamathi Elangovan
