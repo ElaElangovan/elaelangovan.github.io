@@ -1,8 +1,5 @@
 # Exploring the correlation between parental education level and the education level of their children.
 
-### Elamathi Elangovan
-### May 2022
-
 ## Research Question: 
 
 Does higher parental education levels correlate to a higher level of education in their offspring?
