@@ -9,27 +9,30 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Title: Exploring the correlation between parental education level and the education level of their children.
+# Exploring the correlation between parental education level and the education level of their children.
 
-Research Question: 
+### Elamathi Elangovan
+### May 2022
+
+## Research Question: 
 
 Does higher parental education levels correlate to a higher level of education in their offspring?
 
-Data origins: 
+## Data origins: 
 
 This data is taken from the 2014 General Society Survey (GSS) Merged Single-Year Data Set. It includes variables on topics such as marital status, labor force status, number of hours worked, occupational prestige, divorce status, level of education and similar data for their mothers and fathers. The following considers this dataset and looks at educational correlates, exploring whether there is a relationship between parental education and that of the respondents. 
 
 The data used was provided as a zip file link from https://gss.norc.org/get-the-data/spss provided in tomstafford.github.io 
 
-Data preparations:
+## Data preparations:
 
 Fortunately, the data was fairly clear, with the required columns appearing next to one another. 
 
-Visualisation:
+## Visualisation:
 
 I chose to plot scatter plots as they most easily show the relationships between two variables. In this case I sought to observe if paternal and maternal education level separately would depict a relationship with the respondent's education level
 
-# Load in the data 
+#Load in the data 
 library(haven)
 df <- read_sav("//studata05/home/PC/Pcp21ed/ManW10/Desktop/gss2014merged_r10 - spss.sav")
 library(ggplot2)
@@ -53,10 +56,13 @@ q + geom_point() + geom_smooth() + labs(x = "respondent education level",
                                         y = "paternal education level", 
                                         title = "The relationship between paternal education and respondents education")
 
+![trial](/images/trial.png "yeahh")
 
 
 ```
 
+
+ 
 In comparing maternal education level with that of the respondent,  it can be deduced that there is a positive, nonlinear association between the two variables, albeit weak, and the same was seen when paternal education level was compared with the respondent's education level. This suggests a weak positive relationship between parental education level and that of the respondent, where the higher the education level of the parent, the higher the education level of their child. 
 
 Summary:
