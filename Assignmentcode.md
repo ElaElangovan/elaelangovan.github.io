@@ -29,6 +29,10 @@ The data used was provided as a zip file link from
 <https://gss.norc.org/get-the-data/spss> provided in the module guide
 tomstafford.github.io .
 
+``` r
+knitr::opts_chunk$set(fig.path='Figs/')
+```
+
 ## Look at Data
 
 ``` r
@@ -126,7 +130,7 @@ p + geom_point() + geom_smooth() + labs(x = "respondent education level",
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](Assignmentcode_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](Figs/unnamed-chunk-3-1.png)<!-- -->
 
 ``` r
 q <- ggplot(gss2014merged_r10_spss, aes(x = educ, y = paeduc))
@@ -137,9 +141,7 @@ q + geom_point() + geom_smooth() + labs(x = "respondent education level",
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](Assignmentcode_files/figure-gfm/unnamed-chunk-3-2.png)<!-- -->
-
-## Refine your Plots (where I need help!) - please help me customise the plot (e.g. change colour of line for maeduc to red?), i tried to do it below but it wasnt working :(
+![](Figs/unnamed-chunk-3-2.png)<!-- -->
 
 ``` r
 p <- ggplot(data = gss2014merged_r10_spss, mapping = aes(x = educ, y = maeduc))
@@ -154,7 +156,7 @@ p + geom_point() + geom_smooth(color = "Red") + xlim(c(0,20)) +ylim(c(0,20)) +la
 
     ## Warning: Removed 381 rows containing missing values (geom_point).
 
-![](Assignmentcode_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](Figs/unnamed-chunk-4-1.png)<!-- -->
 
 ``` r
 q <- ggplot(gss2014merged_r10_spss, aes(x = educ, y = paeduc))
@@ -169,7 +171,7 @@ q + geom_point() + geom_smooth(color = "blue") + xlim(c(0,20)) +ylim(c(0,20)) + 
 
     ## Warning: Removed 962 rows containing missing values (geom_point).
 
-![](Assignmentcode_files/figure-gfm/unnamed-chunk-4-2.png)<!-- -->
+![](Figs/unnamed-chunk-4-2.png)<!-- -->
 
 ### Notes
 
